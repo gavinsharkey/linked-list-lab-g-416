@@ -57,7 +57,17 @@ function insertNodeAt(index, address, linkedList, collection) {
   node.next = nextAddress
 }
 
-function deleteNodeAt(index, linkedList, collection)
+function deleteNodeAt(index, linkedList, collection) {
+  let node = collection[linkedList]
+  
+  for (let i = 0; i < index - 1; i++) {
+    node = next(node, collection)
+  }
+  
+  const preceedingNode = node
+  node = 
+  
+}
 
 
 
