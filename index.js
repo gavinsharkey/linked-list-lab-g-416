@@ -44,5 +44,7 @@ function indexAt(node, collection, linkedList) {
   return -1;
 }
 
+function insertNodeAt(index, address, )
+
 
 
