@@ -7,14 +7,14 @@ function headNode(linkedList, collection) {
 }
 
 function next(node, collection) {
-  return collection[node.next]
+  return next(node, collection)
 }
 
 function nodeAt(index, linkedList, collection) {
   let node = collection[linkedList]
   
   for (let i = 0; i < index; i++) {
-    node = collection[node.next]
+    node = next(node, collection)
   }
   
   return node
@@ -48,12 +48,15 @@ function insertNodeAt(index, address, linkedList, collection) {
   let node = collection[linkedList]
   
   for (let i = 0; i < index - 1; i++) {
-    node = collection[node.next]
+    node = next(node, collection)
   }
   
+  next = node.next
   node.next = address
   
-  node = collection[]
+  node = next(node, collection)
+  
+  node.
 }
 
 
