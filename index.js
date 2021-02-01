@@ -27,3 +27,22 @@ function addressAt(index, linkedList, collection) {
     return nodeAt(index - 1, linkedList, collection).next
   }
 }
+
+function indexAt(node, collection, linkedList) {
+  let currentNode = collection[linkedList]
+  let index = 0
+  
+  while (currentNode.next !== null) {
+    if (node.name === currentNode.name) {
+      return index
+    } else {
+      index++
+      currentNode = collection[currentNode.next]
+    }
+  }
+  
+  return -1;
+}
+
+
+
