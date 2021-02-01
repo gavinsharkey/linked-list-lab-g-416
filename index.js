@@ -51,12 +51,12 @@ function insertNodeAt(index, address, linkedList, collection) {
     node = next(node, collection)
   }
   
-  next = node.next
+  let next = node.next
   node.next = address
   
   node = next(node, collection)
   
-  node.
+  node.next = next
 }
 
 
