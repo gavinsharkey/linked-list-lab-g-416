@@ -9,3 +9,13 @@ function headNode(linkedList, collection) {
 function next(node, collection) {
   return collection[node.next]
 }
+
+function nodeAt(index, linkedList, collection) {
+  let node = collection[linkedList]
+  
+  for (let i = 0; i < index; i++) {
+    node = collection[node.next]
+  }
+  
+  return node
+}
