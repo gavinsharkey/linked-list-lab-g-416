@@ -65,8 +65,9 @@ function deleteNodeAt(index, linkedList, collection) {
   }
   
   const preceedingNode = node
-  node = 
+  const nodeToRemove = next(node, collection)
   
+  preceedingNode.next = nodeToRemove.next
 }
 
 
