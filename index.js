@@ -44,7 +44,17 @@ function indexAt(node, collection, linkedList) {
   return -1;
 }
 
-function insertNodeAt(index, address, )
+function insertNodeAt(index, address, linkedList, collection) {
+  let node = collection[linkedList]
+  
+  for (let i = 0; i < index - 1; i++) {
+    node = collection[node.next]
+  }
+  
+  node.next = address
+  
+  node = collection[]
+}
 
 
 
